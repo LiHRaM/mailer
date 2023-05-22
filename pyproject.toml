@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "src/_version.py"
+
+[project]
+name = "mailer"
+description = "Send an email from the CLI."
+requires-python = ">=3.9"
+keywords = ["email", "cli", "smtp"]
+license = { text = "MIT" }
+dependencies = ["typer", 'importlib-metadata; python_version<"3.8"']
+dynamic = ["version"]
+
+[[project.authors]]
+name = "Hilmar Gústafsson"
+email = "LiHRaM@users.noreply.github.com"
+
+[project.scripts]
+mailer = "mailer:run"
