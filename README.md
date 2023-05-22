@@ -12,7 +12,7 @@ pip install git+https://github.com/LiHRaM/mailer.git
 
 ## Usage
 
-This application can be run from the command line with the command `python src/main.py`, followed by the necessary options.
+This application can be run from the command line with the command `mailer`, followed by the necessary options.
 
 The application accepts the following options:
 
@@ -31,7 +31,7 @@ To send an email:
 
 ```bash
 export SMTP_USERNAME=yourusername@gmail.com
-python src/main.py --to receiver@example.com --subject "Hello" --body "This is the body of the email."
+mailer --to receiver@example.com --subject "Hello" --body "This is the body of the email."
 ```
 
 When you run this command, you will be prompted to enter your SMTP password.
